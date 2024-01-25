@@ -1,4 +1,4 @@
 # learn-js
 JavaScript tutorial repo
 
-### Jeffrey Chen
+### REPLACE WITH YOUR FULL NAME
