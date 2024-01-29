@@ -7,7 +7,12 @@
             {
                 y = y + 1;
                 console.log(x+y);
+                /*
+                Variables within the scope initialized with let cannot be accessed outside of the scope
                 let y = 2;
+                */
+                // We can redeclare y given that it is a var
+                y = 2
             }
             console.log(x);
             console.log(y);
