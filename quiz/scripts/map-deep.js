@@ -5,8 +5,9 @@ const originalMatrix = [
     [7, 9, 8]
   ];
   
+  // Adding a Array.from() allows a copy here before it copies
   const newMatrix = originalMatrix.map((row) => {
-    return row.sort();
+    return Array.from(row).sort();
   });
   
   // Modifying the original matrix (changing the last element of the first row)
@@ -15,4 +16,3 @@ const originalMatrix = [
   // Displaying the original and new matrices
   console.log('Original Matrix (modified):', originalMatrix);
   console.log('New Matrix (unaffected):', newMatrix);
-  
