@@ -9,23 +9,31 @@ class PStack {
     return this.#id;
   }
 
-}
-
-class PStackImpl extends PStack {
-  constructor() {
-    super();
-    this.persons = [];
-  }
   push(p) {
-    return this.persons.push(p)
+    // implement in child class
   }
 
   pop() {
-    return this.persons.pop().age
+    // implement in child class
+  }
+
+}
+
+class PStackImpl extends PStack {
+  #persons = []
+  constructor() {
+    super();
+  }
+  push(p) {
+    return this.#persons.push(p)
+  }
+
+  pop() {
+    return this.#persons.pop().age
   }
 
   show() {
-    return this.persons
+    return this.#persons
   }
 
 }
@@ -37,3 +45,4 @@ pstack.push({name: 'Dein', age: 19});
 console.log(pstack.pop());
 console.log(pstack.pop());
 console.log(pstack.show());
+console.log(pstack.showId());
