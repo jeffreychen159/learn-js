@@ -1,10 +1,11 @@
 class PStack {
   #id;
   constructor() {
-    this.#id = 1;
+    this.#id = Math.floor(Math.random() * 100) + 1;
   }
 
   showId() {
+    console.log(this);
     return this.#id;
   }
 
